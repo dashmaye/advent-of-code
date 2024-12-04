@@ -11,3 +11,14 @@ for loc in range(location_one.size):
     distance += abs(location_one[loc] - location_two[loc])
 
 print(distance)
+
+similarity = 0
+for loc_a in range(location_one.size):
+    occurence = 0
+    for loca_b in range(location_one.size):
+        if location_one[loc_a] == location_two[loca_b]:
+            occurence += 1
+    temp = location_one[loc_a] * occurence
+    similarity += temp
+
+print(similarity)
