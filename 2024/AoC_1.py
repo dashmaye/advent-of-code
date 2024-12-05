@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-df = pd.read_excel('AoC_1.xlsx', header=None, sheet_name='CleanData')
+df = pd.read_excel('AoC_1_input.xlsx', header=None, sheet_name='CleanData')
 
 location_one = np.sort(df[0].to_numpy())
 location_two = np.sort(df[1].to_numpy())

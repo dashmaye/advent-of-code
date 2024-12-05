@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-with open('AoC_2_Input.txt', 'r') as file:
+with open('AoC_2_input.txt', 'r') as file:
     data = [line.strip().split() for line in file]
 
 df = pd.DataFrame(data).apply(pd.to_numeric, errors='coerce').astype('float64')
